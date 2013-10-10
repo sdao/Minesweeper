@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="30162PamplemousseSoftware.SimpleMinesweeper" Version="1.0.0.7" Publisher="CN=8732D267-6CC3-45C4-9CD6-AF5542A99A23" />
+  <Properties>
+    <DisplayName>Sweeper</DisplayName>
+    <PublisherDisplayName>Pamplemousse Software</PublisherDisplayName>
+    <Logo>images\mine_store.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Sweeper" Logo="images\mine.png" SmallLogo="images\mine_small.png" Description="A clone of the popular Minesweeper puzzle game." ForegroundText="light" BackgroundColor="#00bbff">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="images\mine_splash.png" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>

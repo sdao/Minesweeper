@@ -1,0 +1,107 @@
+﻿#mainGrid
+{
+    background-color: white;
+}
+
+#infoTile
+{
+    background-color: #999;
+}
+
+#appBar
+{
+    background-color: #999;
+}
+
+.cellCovered
+{
+    color: Black;
+    background-color: Silver;
+    border-top: 2px solid Gainsboro;
+    border-left: 2px solid Gainsboro;
+    border-right: 2px solid DarkGray;
+    border-bottom: 2px solid DimGray;
+}
+
+.cellNumber
+{
+    color: Black;
+    background: none;
+    border: 2px solid LightGray;
+}
+
+.cellMine
+{
+    color: Black;
+    background: none;
+    border: 2px solid LightGray;
+}
+
+    .cellMine > .glyph:before
+    {
+        content: "\1F4A3";
+    }
+
+.cellTripped
+{
+    color: Black;
+    background-color: Firebrick;
+    border: 2px solid Black;
+}
+
+    .cellTripped > .glyph:before
+    {
+        content: "\1F4A3";
+    }
+
+.cellFlag
+{
+    color: Firebrick;
+    background-color: Silver;
+    border-top: 2px solid Gainsboro;
+    border-left: 2px solid Gainsboro;
+    border-right: 2px solid DarkGray;
+    border-bottom: 2px solid DimGray;
+    text-shadow: 1px 1px 0px 0px white;
+}
+
+    .cellFlag > .glyph:before
+    {
+        content: "\26F3";
+    }
+
+.cellQuestion
+{
+    color: Navy;
+    background-color: Silver;
+    border-top: 2px solid Gainsboro;
+    border-left: 2px solid Gainsboro;
+    border-right: 2px solid DarkGray;
+    border-bottom: 2px solid DimGray;
+    text-shadow: 1px 1px 0px 0px white;
+}
+
+    .cellQuestion > .glyph:before
+    {
+        content: "\2753";
+    }
+
+.cellFound
+{
+    color: Firebrick;
+    background: none;
+    border: 2px solid LightGray;
+}
+
+    .cellFound > .glyph:before
+    {
+        content: "\26F3";
+    }
+
+.cellCovered:active, .cellFlag:active, .cellQuestion:active
+{
+    border-bottom: 2px solid Gainsboro;
+    border-right: 2px solid Gainsboro;
+    border-left: 2px solid DarkGray;
+    border-top: 2px solid DimGray;
+}

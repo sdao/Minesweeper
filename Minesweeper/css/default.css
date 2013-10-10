@@ -1,0 +1,235 @@
+﻿body
+{
+    cursor: default;
+}
+
+#mainGrid
+{
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: auto 1fr;
+    display: -ms-grid;
+    height: 100%;
+}
+
+#infoPane
+{
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+}
+
+#infoTile
+{
+    height: 100%;
+    padding: 0px 10px;
+    font-size: 20pt;
+    line-height: 30pt;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr;
+}
+
+#gamePane
+{
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    padding: 10px;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+}
+
+#gameGrid
+{
+    height: 100%;
+    width: 100%;
+}
+
+.easy
+{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: -ms-grid;
+}
+
+    .easy > .cell
+    {
+        margin: 3px;
+        font-size: 40pt;
+        line-height: 40pt;
+    }
+
+    .easy > .cellMedium, .easy > .cellHard
+    {
+        display: none;
+    }
+
+.medium
+{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: -ms-grid;
+}
+
+    .medium > .cell
+    {
+        margin: 3px;
+        font-size: 30pt;
+        line-height: 30pt;
+    }
+
+    .medium > .cellHard
+    {
+        display: none;
+    }
+
+.hard
+{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: -ms-grid;
+}
+
+    .hard > .cell
+    {
+        margin: 2px;
+        font-size: 20pt;
+        line-height: 20pt;
+    }
+
+.cell
+{
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-transition: 0.2s;
+}
+
+.glyph
+{
+    text-align: center;
+    width: 100%;
+}
+
+#holdToFlag
+{
+    color: black;
+    background: white;
+    position: absolute;
+    font-size: 16pt;
+    line-height: 20pt;
+    text-align: center;
+    border: 2px solid DimGray;
+    padding: 0px 10px;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    display: none;
+    white-space: nowrap;
+}
+
+#holdProgress
+{
+    background: black;
+    position: absolute;
+    margin-left: -10px;
+    opacity: 0.25;
+    height: 100%;
+    width: 0%;
+    bottom: 0px;
+}
+
+#command-reset
+{
+    display: none;
+}
+
+.settingsSwatch
+{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    -ms-transition: 0.2s;
+}
+
+.settingsSelected
+{
+    border: 5px solid black;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape)
+{
+    #gamePane
+    {
+        -ms-flex-direction: row;
+    }
+}
+
+@media screen and (-ms-view-state: filled)
+{
+    #gamePane
+    {
+        -ms-flex-direction: row;
+    }
+}
+
+@media screen and (-ms-view-state: snapped)
+{
+    #gamePane
+    {
+        -ms-flex-direction: column;
+    }
+
+    #gameGrid
+    {
+        height: 300px !important;
+    }
+
+    .easy > .cell
+    {
+        font-size: 20pt;
+        line-height: 20pt;
+    }
+
+    .medium > .cell
+    {
+        font-size: 15pt;
+        line-height: 15pt;
+    }
+
+    .hard > .cell
+    {
+        font-size: 10pt;
+        line-height: 10pt;
+    }
+
+    #holdToFlag
+    {
+        font-size: 8pt;
+        line-height: 10pt;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait)
+{
+    #gamePane
+    {
+        -ms-flex-direction: column;
+    }
+}
+
+@-ms-keyframes pulse
+{
+    from
+    {
+        -ms-animation-timing-function: linear;
+    }
+
+    50%
+    {
+        color: rgba(255, 255, 255, 0);
+        -ms-animation-timing-function: ease;
+    }
+
+    to
+    {
+        -ms-animation-timing-function: linear;
+    }
+}

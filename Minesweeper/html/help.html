@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Help</title>
+    </head>
+    <body>
+        <div aria-label="App Settings Flyout" data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{settingsCommandId:'AppHelp', width:'wide'}"><!-- Add the background color matching you app tile color to the settings flyout header. --><!-- Use add the win-ui-dark class if the background color requires a white text--><!-- Add the app small logo to the settings flyout header -->
+		<div class="win-header win-ui-dark" style="background-color: #00bbff;">
+			<button class="win-backbutton" onclick="WinJS.UI.SettingsFlyout.show()" type="button"></button>
+			<div class="win-label">Help</div>
+			<img alt="smalllogo" style="position: absolute; right: 40px;" src="/images/mine_small.png">
+		</div>
+		<div class="win-content">
+			<div class="win-settings-section">
+				<h3>
+					For those who already know how to play Minesweeper
+				</h3>
+				<p>
+					The controls are a bit different in Sweeper if you are playing with a touch screen.
+					If you are <strong>using a mouse</strong>, continue to play like normal Minesweeper, by right-clicking on tiles to mark them with a flag or question mark.
+					If you are <strong>using touch</strong>, hold down a tile and wait for the progress bar to complete in order to mark the tile with a flag. Repeat a second time to mark it with a question mark, and a third time to unmark the tile.
+				</p>
+
+				<h3>
+					Introduction
+				</h3>
+                <p>
+                    Sweeper is a version of a classic game called Minesweeper.
+                    Depending on the difficulty, there are a certain number of mines hidden behind the squares in the grid. There are 10 mines in the easy game, 20 mines in the medium game, and 40 mines in the hard game.
+                </p>
+                <p>
+                    Your job is to figure out where the mines are.
+                    In the upper-right hand corner of the screen are the number of mines you have flagged and the number of mines in total.
+                </p>
+                <p>
+                    You are also trying to clear the board as fast as possible.
+                    In the upper-left corner of the screen is the amount of time you have spent.
+                </p>
+
+                <h3>
+					Game Mechanics
+				</h3>
+                <p>
+                    Start by clicking or lightly tapping on a tile to reveal it. (Note that the first tile you click on will not have a mine!)
+                    The tile, and possibly several of its neighbors, will show a number like this:
+                </p>
+				<div style="margin-bottom: 0.5em; height: 1.5em; width: 1.5em; font-size: 3em; border: 1px solid gray; text-align: center; padding: 0.2em;">2</div>
+				<p>
+                    This means that, in the eight tiles to the left, right, up, down, and diagonals, there are 2 mines.
+                </p>
+				<p>
+                    Continue revealing tiles until all the tiles are uncovered <strong>except</strong> for the ones that contain mines.
+					You win the game when only the mines are left. You lose when you accidentally uncover a mine.
+				</p>
+
+				<h3>
+					Flagging a Tile
+				</h3>
+				<p>
+					There are some situations where you know that a tile contains a mine. For example, if a tile says
+                </p>
+				<div style="margin-bottom: 0.5em; height: 1.5em; width: 1.5em; font-size: 3em; border: 1px solid gray; text-align: center; padding: 0.2em;">1</div>
+				<p>
+                    and there is only one uncovered tile around it, the uncovered tile must contain a mine. In this situation, you can flag that mine.
+					This prevents you from accidentally clicking and revealing it.
+                </p>
+				<div>
+                    <p>To flag a tile if you are using a mouse, simply right-click on the tile.</p>
+					<p>To flag a tile if you are using a touch screen, hold down the tile and don't let go.
+					You will see the following progress bar appear: </p>
+                </div>
+				<div style="width: 200px; margin-bottom: 0.5em; font-size: 1.5em; border: 1px solid gray; background: -ms-linear-gradient(left, gray 33%,white 34%); text-align: center; padding: 0.2em;">Hold to flag</div>
+				<p>
+					Wait for the progress bar to complete before letting go. The tile will be marked with a flag and cannot be uncovered:
+				</p>
+				<div style="margin-bottom: 0.5em; height: 1.5em; width: 1.5em; font-size: 3em; border: 1px solid gray; text-align: center; padding: 0.2em;">&#9873;</div>
+				<p>
+					Repeating this procedure a second time will mark the tile with a question mark:
+				</p>
+				<div style="margin-bottom: 0.5em; height: 1.5em; width: 1.5em; font-size: 3em; border: 1px solid gray; text-align: center; padding: 0.2em;">?</div>
+				<p>
+					Repeating this procedure a third time unmarks the tile and allows it to be uncovered again.
+				</p>
+
+                <h3>
+                    Legal Information
+                </h3>
+                <div>This application uses software from the following sources:</div>
+                <ul>
+                    <li>
+                        <strong>jQuery</strong>
+                        Copyright 2013 jQuery Foundation and other contributors.
+                        <a href="http://jquery.com/">http://jquery.com</a>.
+                    </li>
+                    <li>
+                        <strong>jquery-win8</strong>
+                        Copyright 2012 appendTo, LLC.
+                        <a href="https://github.com/appendto/jquery-win8">https://github.com/appendto/jquery-win8</a>
+                    </li>
+                    <li>
+                        <strong>timeago plugin for jQuery</strong>
+                        Copyright (c) 2008-2011, Ryan McGeary (ryanonjavascript -[at]- mcgeary [*dot*] org).
+                        <a href="http://timeago.yarp.com/">http://timeago.yarp.com/</a>
+                    </li>
+                </ul>
+			</div>
+		</div>
+	</div>
+    </body>
+</html>

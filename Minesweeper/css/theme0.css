@@ -1,0 +1,97 @@
+﻿#mainGrid
+{
+    background-image: -ms-linear-gradient(45deg, rgba(0, 0, 0, 0.02) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.02) 50%, rgba(0, 0, 0, 0.02) 75%, transparent 75%, transparent);
+    background-size: 20px 20px;
+}
+
+#infoTile
+{
+    background-color: #0099dd;
+}
+
+#appBar
+{
+    background-color: #0099dd;
+}
+
+.cellCovered
+{
+    color: white;
+    background-color: DeepSkyBlue;
+}
+
+.cellNumber
+{
+    color: white;
+    background: none;
+    border: 2px solid LightGray;
+}
+
+.cellMine
+{
+    color: #C41E3A;
+    background: none;
+    border: 2px solid #C41E3A;
+}
+
+    .cellMine > .glyph:before
+    {
+        content: "\2738";
+    }
+
+.cellTripped
+{
+    color: white;
+    background-color: #C41E3A;
+}
+
+    .cellTripped > .glyph:before
+    {
+        content: "\2738";
+    }
+
+.cellFlag
+{
+    color: white;
+    background-color: LimeGreen;
+    -ms-animation-duration: 2s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-name: pulse;
+}
+
+    .cellFlag > .glyph:before
+    {
+        content: "\2691";
+    }
+
+.cellQuestion
+{
+    color: white;
+    background-color: Gold;
+    -ms-animation-duration: 2s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-name: pulse;
+}
+
+    .cellQuestion > .glyph:before
+    {
+        content: "?";
+    }
+
+.cellFound
+{
+    color: LimeGreen;
+    background: none;
+    border: 2px solid LimeGreen;
+}
+
+    .cellFound > .glyph:before
+    {
+        content: "\2691";
+    }
+
+.cellCovered:active, .cellFlag:active, .cellQuestion:active
+{
+    -ms-transform: scale(0.9);
+    background-image: -ms-radial-gradient(50% 50%, circle, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
+}

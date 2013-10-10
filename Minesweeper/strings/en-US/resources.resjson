@@ -1,0 +1,72 @@
+﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+{
+    // Goes in the upper-right hand indicator with {0}=flags remaining and {1}=flags total placeholders
+    "STATUS_FLAGGED_TEXT"               : "{0}/{1} \u2691",        
+     
+    // Goes in the hold-tip
+    "HOLDTIP_TEXT_FLAG"                 : "Hold to flag",       
+    
+    // Goes in the hold-tip
+    "HOLDTIP_TEXT_UNFLAG"               : "Hold to unmark", 
+
+    // Goes in the hold-tip
+    "HOLDTIP_TEXT_QUESTION"             : "Hold to question", 
+
+    // Goes in the upper-right corner when game won
+    "GAME_WON_TEXT"                     : "\u263a", 
+
+    // Goes in the upper-right corner when game lost
+    "GAME_LOST_TEXT"                    : "\u2639", 
+
+    // Title for games won
+    "CONFIRM_WON_TITLE"                 : "You won!",
+
+    // Description to tell user to continue after a win
+    "CONFIRM_WON_INFO"                  : "Start a new game, or hit Dismiss to continue.",
+
+    // Additional text when the user wins a non-highscore. Must end with a space
+    "CONFIRM_WON_DETAIL_NORMAL"         : "You're on a roll. ",
+
+    // Additional text when the user wins a highscore. Must end with a space
+    "CONFIRM_WON_DETAIL_HIGHSCORE"      : "That's a new high score: #{0} for {1} games. ",
+
+    // Title for games lost
+    "CONFIRM_LOST_TITLE"                : "Sorry... you lost.",
+
+    // Description to tell user to continue after a loss
+    "CONFIRM_LOST_INFO"                 : "Better luck next time. Start a new game, or hit Dismiss to continue.",
+
+    // End-of-game dialog confirmation - close dialog without doing anything
+    "CONFIRM_COMMAND_DISMISS"           : "Dismiss",
+
+    // End-of-game dialog confirmation - show high scores
+    "CONFIRM_COMMAND_HIGHSCORE"         : "Scores",
+
+    // End-of-game dialog confirmation - start new game
+    "CONFIRM_COMMAND_NEWGAME"           : "New Game",
+
+    // End-of-game dialog confirmation - show high scores, short version used when three buttons are shown
+    "CONFIRM_COMMAND_NEWGAME_SHORT"     : "New",
+
+    // Title of share text - used in Share Charm
+    "SHARE_SCORES_TITLE"                : "Minesweeper high scores",
+
+    // Description of share text - used in Share Charm
+    "SHARE_SCORES_DESC"                 : "Score data organized by difficulty level",
+
+    // Text contents of share text - introduction
+    "SHARE_SCORES_TEXT"                 : "Can you beat my current high scores in Minesweeper?",
+
+    // Text contents of share text - score element formatted with {0}=difficulty and {1}=time. Optimally begins with some sort of spacing
+    "SHARE_SCORES_TEXT_ITEM"            : " {0}: {1}",
+
+    // HTML contents of share text - introduction
+    "SHARE_SCORES_HTML_TEXT"            : "<p>Can you beat my current high scores in Minesweeper?</p>",
+    
+    // HTML contents of share text - group of scores with same sifficulty with {0}=difficulty and {1}=space to insert list items
+    "SHARE_SCORES_HTML_BLOCK"           : "<h1>{0}</h1><ol>{1}</ol>",
+    
+    // HTML contents of share text - score element with {0}=time and {1}=date
+    "SHARE_SCORES_HTML_ITEM"            : "<li>{0}, on {1}</li>"
+}
